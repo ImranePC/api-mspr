@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteRule ^concerts/?$ concerts.php [NC,L]
+RewriteRule ^[^/]+/(\d+)$ concerts.php?id=$1
+
+RewriteRule ^infos$ info.php [NC,L]
+RewriteRule ^lastinfo$ info.php/?last=true [NC,L]
+
+RewriteRule ^faq$ faq.php [NC,L]
+RewriteRule ^scenes$ scene.php [NC,L]
+RewriteRule ^partenaires$ partenaire.php [NC,L]
